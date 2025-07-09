@@ -17,7 +17,11 @@ A user-friendly desktop tool, built with Python, to create transparent `.webm` s
   * **Multi-Language Support**: Easily add new languages by creating simple `.json` files.
 
 -----
-
+## \#\# Preview
+![Quality tab](quality.png)
+![Advanced tab](advanced.png)
+![Log tab](log.png)
+-----
 ## \#\# Installation & Setup
 
 Follow these steps to get the application running on your system.
