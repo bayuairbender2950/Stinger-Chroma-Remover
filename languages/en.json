@@ -1,0 +1,55 @@
+{
+    "language_name": "English (US)",
+    "app_title": "Stinger Chroma-remover",
+    "step1_label": "Step 1:",
+    "select_video_button": "Select Video File...",
+    "step3_button": "Step 3: Save As WEBM...",
+    "no_file_selected": "No file selected",
+    "ffmpeg_found": "FFmpeg: Found",
+    "ffmpeg_not_found": "FFmpeg: Not Found!",
+    "welcome_message": "Welcome! Please select a video to begin.",
+    "video_loaded_message": "Video loaded. Click the preview to pick a color.",
+    "color_selected_message": "Color {color} selected. Ready to convert!",
+    "quality_tab": {
+      "title": "Quality",
+      "header": "Step 2: Pick Color & Refine Quality",
+      "instruction": "Click the video preview to select a color.",
+      "tolerance_label": "Color Tolerance (Similarity)",
+      "blend_label": "Edge Softness (Blend)",
+      "denoise_label": "Denoise Strength (0 = Off)",
+      "despill_label": "Remove Green Edge Spill (Despill)",
+      "despill_checkbox": "Apply Despill"
+    },
+    "advanced_tab": {
+      "title": "Advanced",
+      "hw_accel_label": "Hardware Acceleration",
+      "resolution_label": "Resolution (WxH)",
+      "crf_label": "Video Quality (CRF: Lower is Better)",
+      "speed_label": "Encoder Speed",
+      "fps_label": "Output Framerate (FPS)",
+      "keep_fps_checkbox": "Keep Original",
+      "audio_bitrate_label": "Audio Bitrate",
+      "no_audio_checkbox": "Disable Audio Track"
+    },
+    "log_tab": {
+      "title": "Log"
+    },
+    "help": {
+      "ffmpeg_not_found_title": "FFmpeg Not Found",
+      "ffmpeg_not_found_msg": "FFmpeg could not be found.\nPlease place ffmpeg.exe in the same folder as this application, or install it to your system's PATH.",
+      "denoise_title": "Help: Denoise",
+      "denoise_msg": "This filter reduces grain and noise from your video.\n\nWhy use it?\nApplying a small amount of denoise BEFORE color keying can result in a much cleaner and more accurate transparent edge.\n\nRecommended: 1.0 to 2.0 for noisy webcam footage. 0.0 means off.",
+      "despill_title": "Help: Despill",
+      "despill_msg": "This filter removes color spill from the foreground.\n\nWhy use it?\nSometimes, light from the green screen reflects onto the edges of your subject, giving them a green halo. Despill neutralizes this green color, making the final result look much more natural.",
+      "hw_accel_title": "Help: Hardware Acceleration",
+      "hw_accel_msg": "This uses your GPU to speed up the video DECODING process.\n\nHow it works:\nThe final ENCODING to a transparent WEBM still uses the CPU for maximum compatibility. This hybrid approach provides a good speed boost.\n\nSelect the option that matches your GPU.",
+      "crf_title": "Help: Video Quality (CRF)",
+      "crf_msg": "CRF (Constant Rate Factor) controls the output quality and file size.\n\nIt's an inverted scale: The LOWER the number, the HIGHER the quality (and the larger the file size).\n\n• 18-24: Excellent, high quality.\n• 25-30: Good balance.\n• 31+: Lower quality, smaller files.",
+      "speed_title": "Help: Encoder Speed",
+      "speed_msg": "This controls the trade-off between conversion time and file size.\n\nA slower speed allows the encoder to make better decisions, resulting in a smaller file for the same quality, but takes longer.\n\n• 0: Slowest, best compression.\n• 2-3: Good balance (recommended).\n• 5: Fastest, slightly larger file.",
+      "fps_title": "Help: Output Framerate",
+      "tolerance_title": "Help: Color Tolerance",
+      "tolerance_msg": "Also known as 'Similarity'. This controls how closely a color must match your selection to be removed.\n\n• Higher value (e.g., 0.3): Removes more shades. Good for uneven lighting.\n• Lower value (e.g., 0.1): Is more precise. Good for clean green screens.",
+      "fps_msg": "This forces the output video to a specific framerate.\n\nBy default, the application keeps the original framerate.\n\nUncheck 'Keep Original' to activate the slider and choose a new FPS, like 30 or 60."
+    }
+  }
